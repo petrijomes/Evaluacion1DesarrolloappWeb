@@ -1,7 +1,11 @@
 :root {
-  /* Primary */
+  /* Primario*/
   --lila: #a99acd;
   --blanco: #ffffff;
+  --morado: #D8BFD8;
+  /* secundario*/
+  --piel:#FFE6E6;
+  --lila2: #7f6fa2;
 
   /* Neutral */
   --beige: #f5f5dc;
@@ -9,6 +13,7 @@
 }
 body{
   font-family: "Open Sans", sans-serif;
+  background-color: var(--lila);
 }
 /* barra navegacion*/
 .barra-navegacion {
@@ -44,22 +49,93 @@ body{
 
 /*----------------------------*/
 
+/*cabecera corresponde a div con cuatro secciones*/
 
+/* Estilos para la cabecera */
 .cabecera {
-  background-color: var(--blanco);
-  color: var(--lila);
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 420px;
+  height: 700px;
+  color: var(--lila);
 }
 
+/* Estilos para las filas */
+.seccion-principal{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: var(--lila);
+
+}
+.fila{
+  flex: 1;
+  height: 420px;
+  background-color: var(--piel);
+  border: 0.5px solid black;
+
+  position: relative;
+  overflow: hidden;
+
+}
+#imagen{
+  border: none;
+}
+#floreria{
+  width: 100%;
+  height: 100%;
+}
+#arreglo{
+  margin-top: 40px;
+  margin-left: 190px;
+  width: 60%;
+  height: 75%;
+  border-radius: 8px;
+}
+
+h1{
+  font-size: 20px;
+  font-weight: 900;
+  margin: 30px 0px 10px 0px;
+
+}
+h2{
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.fila h1,h2,p{
+  
+  margin-left: 20px;
+}
+
+.fila button{
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #D8BFD8;
+  border-radius: 4px;
+  border: none;
+  width: 170px;
+  height: 40px;
+  box-shadow: 1px 3px 15px gray ;
+  transition: 0.5s;
+}
+.fila button:hover{
+  background-color: var(--lila2) ;
+  cursor: pointer;
+  width: 190px;
+}
+
+/*-------------------------------------*/
 .equipo {
   width: 100%;
   height: 320px;
-  background-color: var(--beige);
+  background: linear-gradient(#FFE6E6,#FFF8C9) ;
 }
 .footer {
   width: 100%;
   height: 150px;
-  background-color: #A99ACD;
+  background-color: #FFF8C9;
   color: #FFFFFF;
 }
